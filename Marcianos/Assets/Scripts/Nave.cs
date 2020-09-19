@@ -8,6 +8,8 @@ public class Nave : MonoBehaviour
     private float velocidadDisparo = 2;
     [SerializeField] Transform prefabDisparo;
 
+    //Solo puede haber un disparo en pantalla (usando variable pública y estática)
+    public static bool disparoActivo = false;
 
     void Start()
     {
@@ -31,8 +33,9 @@ public class Nave : MonoBehaviour
                 4.25f, transform.position.y, transform.position.z);
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("space") && !disparoActivo)
         {
+            disparoActivo = true;
             Transform disparo = Instantiate(
                 prefabDisparo, transform.position, Quaternion.identity);
             disparo.gameObject.GetComponent<Rigidbody2D>().velocity =
@@ -40,8 +43,9 @@ public class Nave : MonoBehaviour
         }
     }   
 
+    //Comprobar colisiones con cualquier otro objeto
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Golpeado");
+        //TO DO
     }
 }
