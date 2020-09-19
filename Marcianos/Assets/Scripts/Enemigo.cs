@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemigo : MonoBehaviour
 {
-    float velocidadX = 2;
-    float velocidadY = 0;
+    float velocidadX = 1;
+    //float velocidadY = 0;
 
     void Start()
     {

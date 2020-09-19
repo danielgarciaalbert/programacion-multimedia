@@ -5,6 +5,9 @@ using UnityEngine;
 public class Nave : MonoBehaviour
 {
     [SerializeField] float velocidad = 2;
+    private float velocidadDisparo = 2;
+    [SerializeField] Transform prefabDisparo;
+
 
     void Start()
     {
@@ -26,6 +29,14 @@ public class Nave : MonoBehaviour
         {
             transform.position = new Vector3(
                 4.25f, transform.position.y, transform.position.z);
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Transform disparo = Instantiate(
+                prefabDisparo, transform.position, Quaternion.identity);
+            disparo.gameObject.GetComponent<Rigidbody2D>().velocity =
+                new Vector3(0, velocidadDisparo, 0);
         }
     }   
 
