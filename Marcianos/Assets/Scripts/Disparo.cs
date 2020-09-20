@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Disparo : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class Disparo : MonoBehaviour
                 prefabParticulas, other.transform.position, Quaternion.identity);
             Destroy(particulas.gameObject, 1f);
             Nave.disparoActivo = false;
+            Nave.puntuacion += 1;
         }
     }
 }
