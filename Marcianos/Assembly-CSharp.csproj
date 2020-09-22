@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\Nave.cs" />
     <Compile Include="Assets\Scripts\DisparoEnemigo.cs" />
     <Compile Include="Assets\Scripts\ColliderSuperior.cs" />
+    <Compile Include="Assets\Scripts\ColliderIzquierda.cs" />
+    <Compile Include="Assets\Scripts\ColliderDerecha.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -19,13 +19,16 @@ public class Enemigo : MonoBehaviour
         transform.Translate(velocidadX * Time.deltaTime, 
             0, 0);
 
+        /*
+         * Forma antigua para hacer cambiar de dirección a los enemigos
         if (transform.position.x < -4 || transform.position.x > 4)
         {
             transform.position = new Vector3(
                 transform.position.x, transform.position.y - 0.5f, 0f);
             velocidadX = -velocidadX;
         }
-
+        */
+        
         /* if (transform.position.y < -2.5 || transform.position.y > 2.5)
             velocidadY = -velocidadY; */
     }
@@ -39,5 +42,16 @@ public class Enemigo : MonoBehaviour
         disparo.gameObject.GetComponent<Rigidbody2D>().velocity =
             new Vector3(0, velocidadDisparoEnemigo, 0);
         StartCoroutine(Disparar());
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<ColliderIzquierda>() 
+            || other.gameObject.GetComponent<ColliderDerecha>())
+        {
+            transform.position = new Vector3(
+                transform.position.x, transform.position.y - 0.5f, 0f);
+            velocidadX = -velocidadX;
+        }
     }
 }

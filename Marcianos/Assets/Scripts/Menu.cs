@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Nave.puntuacion = 0;
     }
 
     // Update is called once per frame
@@ -20,5 +20,10 @@ public class Menu : MonoBehaviour
     public void LanzarJuego()
     {
         SceneManager.LoadScene("Nivel1");
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
     }
 }

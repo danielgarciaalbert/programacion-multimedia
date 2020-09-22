@@ -35,7 +35,7 @@ public class Disparo : MonoBehaviour
                 prefabParticulas, other.transform.position, Quaternion.identity);
             Destroy(particulas.gameObject, 1f);
             Nave.disparoActivo = false;
-            Nave.puntuacion += 1;
+            Nave.SumarPuntuacion();
         }
     }
 }
