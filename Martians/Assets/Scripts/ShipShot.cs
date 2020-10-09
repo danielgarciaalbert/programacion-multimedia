@@ -43,5 +43,11 @@ public class ShipShot : MonoBehaviour
                 SceneManager.LoadScene("MainMenu");
             }
         }
+        else if (other.gameObject.GetComponent<EnemyShot>())
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            Ship.TurnOffActiveShot();
+        }
     }
 }

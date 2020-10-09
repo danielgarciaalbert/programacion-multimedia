@@ -15,7 +15,7 @@ public class SpawnEnemies : MonoBehaviour
     void Start()
     {
         StartCoroutine(CreateEnemies());
-        maxAmountOfEnemies = 9;
+        maxAmountOfEnemies = 24;
         currentAmountOfEnemies = 0;
         startingGame = true;
     }

@@ -1,16 +1,16 @@
-﻿using System.Collections;
+﻿// Martians - Daniel García (RightCollider class)
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RightCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

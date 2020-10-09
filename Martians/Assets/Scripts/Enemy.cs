@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        movementSpeed = 1;
+        movementSpeed = 1f;
         enemyShotSpeed = -2;
         StartCoroutine(Shoot());
     }

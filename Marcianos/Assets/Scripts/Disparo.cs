@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Disparo : MonoBehaviour
+public class Disparo : MonoBehaviour    
 {
     [SerializeField] Transform prefabParticulas;
 

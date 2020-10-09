@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000021458, y: -140}
-  m_SizeDelta: {x: 247.64551, y: 97.8952}
+  m_AnchoredPosition: {x: 61, y: -115.8}
+  m_SizeDelta: {x: 369.61023, y: 49.51857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &426004871
 MonoBehaviour:
@@ -528,7 +528,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

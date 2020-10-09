@@ -49,7 +49,7 @@ public class Nave : MonoBehaviour
             disparoActivo = true;
             Transform disparo = Instantiate(
                 prefabDisparo, transform.position, Quaternion.identity);
-            disparo.gameObject.GetComponent<Rigidbody2D>().velocity =
+            disparo.GetComponent<Rigidbody2D>().velocity =
                 new Vector3(0, velocidadDisparo, 0);
             GetComponent<AudioSource>().Play();
         }

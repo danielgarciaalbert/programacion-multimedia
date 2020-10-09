@@ -9,8 +9,8 @@ using UnityEngine.UI;
 
 public class Ship : MonoBehaviour
 {
-    public Text LivesText;
-    public Text ScoreText;
+    [SerializeField] Text LivesText;
+    [SerializeField] Text ScoreText;
     [SerializeField] float movementSpeed = 2f;
     private float shotSpeed = 5f;
     private static int lives;
@@ -30,7 +30,6 @@ public class Ship : MonoBehaviour
         float movement = Input.GetAxis("Vertical");
         transform.Translate(0, movement * movementSpeed * Time.deltaTime, 0);
 
-        //Upper aand lower limitation of ship movement
         if (transform.position.y < -2.5f)
         {
             transform.position = new Vector3(
