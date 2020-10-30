@@ -66,8 +66,10 @@
     <Compile Include="Assets\Scripts\AdviceText.cs" />
     <Compile Include="Assets\Scripts\ButtonCollider.cs" />
     <Compile Include="Assets\Scripts\ColliderGameOver.cs" />
+    <Compile Include="Assets\Scripts\ColliderGameWinner.cs" />
     <Compile Include="Assets\Scripts\ControlsText.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\FinishCollider.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LastText.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
